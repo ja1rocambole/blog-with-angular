@@ -1,0 +1,12 @@
+header {
+    margin-bottom: 16px;
+}
+
+@media (min-width: 700px) {
+    main {
+        display: flex;
+        justify-content: center;
+
+        gap: clamp(16px, 5vw, 60px);
+    }
+  }

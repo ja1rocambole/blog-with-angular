@@ -1,0 +1,36 @@
+li{
+    min-width: 300px;
+    max-width: 400px;
+    height: 150px;
+
+    /* border: solid 1px red; */
+    border-bottom: solid 1px var(--grey);
+    padding: 20px 0;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 auto;
+}
+
+li > img{
+    width: 40%;
+}
+
+li > div {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+li > div > span{
+    color: var(--grey);
+    font-size: 12px;
+    font-weight: normal;
+}
+
+li > div > h3{
+    font-size: 24px;
+    font-weight: bolder;
+}
