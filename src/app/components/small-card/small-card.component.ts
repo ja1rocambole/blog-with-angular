@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { TArticle } from '../../../data/mockData';
 
 @Component({
   selector: 'app-small-card',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './small-card.component.css'
 })
 export class SmallCardComponent {
-
+  @Input({required: true}) data!: TArticle;
 }

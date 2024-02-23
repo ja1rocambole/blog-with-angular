@@ -6,17 +6,16 @@
 
         <div class="container-left">
 
-            <app-big-card></app-big-card>
-        
+
+            <app-big-card [data]="bigArticleData"></app-big-card>
+
         </div>
 
         <div class="container-rigth">
             <ul>
 
-                <app-small-card></app-small-card>
-                <app-small-card></app-small-card>
-                <app-small-card></app-small-card>
-            
+                <app-small-card *ngFor="let a of articles" [data]="a"></app-small-card>
+
             </ul>
         </div>
 
